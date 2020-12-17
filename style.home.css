@@ -1,0 +1,190 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Comfortaa', cursive;
+  background-color: #fde76c;
+}
+
+div.home-container {
+  background-image: url(./images/cover-desktop.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 20px;
+  padding-bottom: 0;
+  margin-bottom: 100px;
+}
+
+#home h2 {
+  background-color: rgba(255, 255, 255, 0.384);
+  padding-top: 60px;
+  padding-bottom: 40px;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 4rem;
+  transform: translateY(-160%);
+}
+
+#home p {
+  background-color: rgba(255, 255, 255, 0.384);
+  padding-top: 50px;
+  padding-bottom: 60px;
+  padding-left: 32px;
+  padding-right: 32px;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 2rem;
+  transform: translateY(-110%);
+}
+
+
+/* for smaller Desktop resolution */
+@media screen and (min-width: 800px), (max-width: 1024px){
+  div.home-container {
+    height: 100vh;
+  }
+
+  #home h2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 30%;
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+  }
+  
+  #home p {
+    background-color: rgba(255, 255, 255, 0.384);
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 3rem;
+  }
+} 
+
+/* for iPad resolution */
+@media screen and (max-width: 768px){ 
+
+div.home-container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./images/cover-ipad.png);
+  justify-content: center;
+  align-items: center;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 100px;
+}
+
+#home h2 {
+  text-align: center;
+  font-weight: bold;
+  transform: translateY(90%);
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 150px;
+}
+
+#home p {
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  font-weight: bold;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  transform: translateY(70%);
+  opacity: 1 !important;
+  }
+}
+
+/* for iPhone 6/7/8 Plus resolution */
+@media screen and (max-width: 414px){
+  div.home-container {
+    width: 110%;
+    height: 100vh;
+  }
+  #home h2 {
+    align-items: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    transform: translateY(50%);
+    padding-top: 50px;
+    padding-bottom: 40px;
+    margin: 0;
+  }
+  
+  #home p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    transform: translateY(50%);
+    padding-top: 30px;
+    padding-bottom: 50px;
+    margin: 0;
+  }
+}
+
+/* for iPhone 6/7/8 resolution */
+@media screen and (max-width: 375px){
+  #home h2 {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin: 0;
+    transform: translateY(30%);
+    align-items: center;
+  }
+  
+  #home p {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    line-height: 1.8rem;
+    margin: 0;
+    transform: translateY(20%);
+    text-align: center;
+  } 
+
+}
+
+/* for iPhone 5/SE resolution */
+@media screen and (max-width: 320px){
+  div.home-container {
+    height: 95vh;
+    background-image: url(./images/cover-desktop.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
+  
+  #home h2 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    transform: translateY(25%);
+  }
+  
+  #home p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    transform: translateY(20%);
+  }
+}
+

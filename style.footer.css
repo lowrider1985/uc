@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Comfortaa', cursive;
+  background-color: #fde76c;
+}
+
+footer {
+  bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  height: 20vh;
+  max-height: 550px;;
+	background-color: #56af31;
+}
+
+.social-menu ul {
+  position: absolute;
+  left: 50%; 
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin: 0;
+  transform: translate(-50%);
+  align-items: center;  
+  display: flex;
+
+}
+
+.social-menu ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.social-menu ul li .fa {
+  font-size: 33px;
+  line-height: 60px;
+  opacity: 1;
+  transition: .4s;
+}
+
+.social-menu ul li .fa:hover {
+  color: white !important;
+}
+
+.social-menu ul li a {
+  padding-bottom: 40px;
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #000;
+  text-align: center;
+  transition: .6s;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, .3);
+}
+
+.social-menu ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.822);
+}
+
+
+div.footer-copyright {
+  bottom: 1%;
+  padding-top: 70px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: .8rem;
+}
+
+div.footer-copyright a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* for smaller Desktop resolution */
+
+@media screen and (max-width: 1024px){
+
+  .social-menu ul li .fa {
+    font-size: 20px;
+    line-height: 60px;
+    opacity: 1;
+    transition: .4s;
+  }
+
+}
+
+/* for iPad resolution */
+
+@media screen and (max-width: 768px){ 
+  footer {
+    bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    height: 12vh;
+    max-height: 550px;;
+    background-color: #56af31;
+  }
+}
+
+/* for iPhone 6/7/8 Plus resolution */
+@media screen and (max-width: 414px){
+  footer {
+    width: 110vw;
+    height: auto;
+  }
+  .social-menu ul {
+    padding-left: 40px;
+    justify-content: space-between;
+  }
+
+  .social-menu ul li {
+    list-style: none;
+    margin: 0 5px;
+  }
+  
+  .social-menu ul li .fa {
+    font-size: 25px;
+    line-height: 60px;
+    opacity: 1;
+    transition: .4s;
+  }
+}
+
+/* for iPhone 6/7/8 resolution */
+@media screen and (max-width: 375px){
+  footer {
+    width: 120vw;
+  }
+  .social-menu ul li .fa {
+    font-size: 20px;
+    line-height: 60px;
+    opacity: 1;
+    transition: .4s;
+  }
+}
+
+/* for iPhone 5/SE resolution */
+@media screen and (max-width: 320px){
+  footer {
+    width: 120vw;
+    bottom: 0;
+  }
+
+  .social-menu ul li .fa {
+    padding-top: 8px;
+    font-size: 30px;
+    line-height: 40px;
+    opacity: 1;
+    transition: .4s;
+  }
+}
